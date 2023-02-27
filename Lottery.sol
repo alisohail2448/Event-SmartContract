@@ -11,7 +11,7 @@ contract Lottery {
     }
 
     receive() external payable {
-        require(msg.value == 1 ether);
+        require(msg.value == 1 wei);
         participants.push(payable(msg.sender));
     }
 
